@@ -37,18 +37,23 @@ namespace WindowsFormsApp1
             this.label2 = new System.Windows.Forms.Label();
             this.tb_bayar = new System.Windows.Forms.TextBox();
             this.btn_hitung = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_clear = new System.Windows.Forms.Button();
             this.txt_totalharga = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_kembalian = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_dashboard = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.tb_jumlahbarang = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_jumlah = new System.Windows.Forms.Label();
             this.tb_items = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_subtotal = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,7 +128,7 @@ namespace WindowsFormsApp1
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(126, 297);
+            this.label2.Location = new System.Drawing.Point(126, 312);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 20);
             this.label2.TabIndex = 6;
@@ -132,7 +137,7 @@ namespace WindowsFormsApp1
             // 
             // tb_bayar
             // 
-            this.tb_bayar.Location = new System.Drawing.Point(222, 292);
+            this.tb_bayar.Location = new System.Drawing.Point(222, 312);
             this.tb_bayar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.tb_bayar.Name = "tb_bayar";
             this.tb_bayar.Size = new System.Drawing.Size(273, 27);
@@ -141,8 +146,8 @@ namespace WindowsFormsApp1
             // 
             // btn_hitung
             // 
-            this.btn_hitung.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_hitung.Location = new System.Drawing.Point(128, 430);
+            this.btn_hitung.Font = new System.Drawing.Font("Agency FB", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_hitung.Location = new System.Drawing.Point(114, 450);
             this.btn_hitung.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btn_hitung.Name = "btn_hitung";
             this.btn_hitung.Size = new System.Drawing.Size(214, 74);
@@ -151,29 +156,30 @@ namespace WindowsFormsApp1
             this.btn_hitung.UseVisualStyleBackColor = true;
             this.btn_hitung.Click += new System.EventHandler(this.btn_hitung_Click);
             // 
-            // button1
+            // btn_clear
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(362, 430);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(214, 74);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "CLEAR";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_clear.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btn_clear.Font = new System.Drawing.Font("Agency FB", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_clear.ForeColor = System.Drawing.Color.Red;
+            this.btn_clear.Location = new System.Drawing.Point(334, 450);
+            this.btn_clear.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(214, 74);
+            this.btn_clear.TabIndex = 8;
+            this.btn_clear.Text = "CLEAR";
+            this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.button1_Click);
             // 
             // txt_totalharga
             // 
             this.txt_totalharga.AutoSize = true;
             this.txt_totalharga.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.txt_totalharga.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_totalharga.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_totalharga.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txt_totalharga.Location = new System.Drawing.Point(543, 104);
+            this.txt_totalharga.Location = new System.Drawing.Point(218, 225);
             this.txt_totalharga.Name = "txt_totalharga";
             this.txt_totalharga.Padding = new System.Windows.Forms.Padding(10, 15, 10, 15);
-            this.txt_totalharga.Size = new System.Drawing.Size(307, 85);
+            this.txt_totalharga.Size = new System.Drawing.Size(224, 69);
             this.txt_totalharga.TabIndex = 9;
             this.txt_totalharga.Text = "Rp. 100,000";
             this.txt_totalharga.Click += new System.EventHandler(this.txt_totalharga_Click);
@@ -182,22 +188,22 @@ namespace WindowsFormsApp1
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(537, 84);
+            this.label3.Location = new System.Drawing.Point(124, 241);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 20);
+            this.label3.Size = new System.Drawing.Size(88, 20);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Total Harga";
+            this.label3.Text = "HARGA PRODUK";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(537, 203);
+            this.label4.Location = new System.Drawing.Point(628, 162);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 20);
+            this.label4.Size = new System.Drawing.Size(64, 20);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Kembalian";
+            this.label4.Text = "KEMBALIAN";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txt_kembalian
@@ -206,33 +212,24 @@ namespace WindowsFormsApp1
             this.txt_kembalian.BackColor = System.Drawing.Color.Black;
             this.txt_kembalian.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_kembalian.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txt_kembalian.Location = new System.Drawing.Point(543, 223);
+            this.txt_kembalian.Location = new System.Drawing.Point(707, 182);
             this.txt_kembalian.Name = "txt_kembalian";
             this.txt_kembalian.Padding = new System.Windows.Forms.Padding(10, 15, 10, 15);
-            this.txt_kembalian.Size = new System.Drawing.Size(224, 69);
+            this.txt_kembalian.Size = new System.Drawing.Size(151, 69);
             this.txt_kembalian.TabIndex = 11;
-            this.txt_kembalian.Text = "Rp. 100,000";
+            this.txt_kembalian.Text = "100000";
             this.txt_kembalian.Click += new System.EventHandler(this.label5_Click);
             // 
-            // pictureBox1
+            // btn_dashboard
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.pictureBox1.Location = new System.Drawing.Point(-4, -3);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 911);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(10, 29);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(72, 76);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_dashboard.Font = new System.Drawing.Font("Agency FB", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dashboard.Location = new System.Drawing.Point(12, 14);
+            this.btn_dashboard.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btn_dashboard.Name = "btn_dashboard";
+            this.btn_dashboard.Size = new System.Drawing.Size(72, 76);
+            this.btn_dashboard.TabIndex = 14;
+            this.btn_dashboard.Text = "DB";
+            this.btn_dashboard.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -252,16 +249,17 @@ namespace WindowsFormsApp1
             this.tb_jumlahbarang.Size = new System.Drawing.Size(272, 27);
             this.tb_jumlahbarang.TabIndex = 15;
             this.tb_jumlahbarang.Text = "1";
+            this.tb_jumlahbarang.TextChanged += new System.EventHandler(this.tb_jumlahbarang_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(804, 203);
+            this.label5.Location = new System.Drawing.Point(547, 162);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 20);
+            this.label5.Size = new System.Drawing.Size(50, 20);
             this.label5.TabIndex = 18;
-            this.label5.Text = "Jumlah";
+            this.label5.Text = "JUMLAH";
             // 
             // txt_jumlah
             // 
@@ -269,7 +267,7 @@ namespace WindowsFormsApp1
             this.txt_jumlah.BackColor = System.Drawing.Color.Black;
             this.txt_jumlah.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_jumlah.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txt_jumlah.Location = new System.Drawing.Point(794, 223);
+            this.txt_jumlah.Location = new System.Drawing.Point(551, 182);
             this.txt_jumlah.Name = "txt_jumlah";
             this.txt_jumlah.Padding = new System.Windows.Forms.Padding(10, 15, 10, 15);
             this.txt_jumlah.Size = new System.Drawing.Size(56, 69);
@@ -278,29 +276,106 @@ namespace WindowsFormsApp1
             // 
             // tb_items
             // 
-            this.tb_items.Location = new System.Drawing.Point(541, 296);
+            this.tb_items.Location = new System.Drawing.Point(558, 50);
             this.tb_items.Multiline = true;
             this.tb_items.Name = "tb_items";
-            this.tb_items.Size = new System.Drawing.Size(309, 126);
+            this.tb_items.ReadOnly = true;
+            this.tb_items.Size = new System.Drawing.Size(309, 98);
             this.tb_items.TabIndex = 19;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(554, 27);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(39, 20);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "ITEMS";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(547, 259);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(63, 20);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "SUBTOTAL";
+            // 
+            // txt_subtotal
+            // 
+            this.txt_subtotal.AutoSize = true;
+            this.txt_subtotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txt_subtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_subtotal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_subtotal.Location = new System.Drawing.Point(632, 279);
+            this.txt_subtotal.Name = "txt_subtotal";
+            this.txt_subtotal.Padding = new System.Windows.Forms.Padding(10, 15, 10, 15);
+            this.txt_subtotal.Size = new System.Drawing.Size(56, 69);
+            this.txt_subtotal.TabIndex = 21;
+            this.txt_subtotal.Text = "0";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Location = new System.Drawing.Point(551, 279);
+            this.label9.Name = "label9";
+            this.label9.Padding = new System.Windows.Forms.Padding(10, 15, 10, 15);
+            this.label9.Size = new System.Drawing.Size(91, 69);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Rp.";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Black;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label10.Location = new System.Drawing.Point(632, 182);
+            this.label10.Name = "label10";
+            this.label10.Padding = new System.Windows.Forms.Padding(10, 15, 10, 15);
+            this.label10.Size = new System.Drawing.Size(91, 69);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "Rp.";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.pictureBox1.Location = new System.Drawing.Point(-4, -3);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 911);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
             // 
             // Kasirapp
             // 
+            this.AcceptButton = this.btn_hitung;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btn_clear;
             this.ClientSize = new System.Drawing.Size(890, 527);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txt_subtotal);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.tb_items);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_jumlah);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tb_jumlahbarang);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_dashboard);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_kembalian);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_totalharga);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.btn_hitung);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_bayar);
@@ -314,7 +389,8 @@ namespace WindowsFormsApp1
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Kasirapp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Kasir App";
+            this.Text = "2";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Kasirapp_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -332,18 +408,23 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tb_bayar;
         private System.Windows.Forms.Button btn_hitung;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.Label txt_totalharga;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label txt_kembalian;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_dashboard;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tb_jumlahbarang;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label txt_jumlah;
         private System.Windows.Forms.TextBox tb_items;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label txt_subtotal;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }
 
